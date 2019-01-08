@@ -52,7 +52,7 @@ class PlacesViewController: UIViewController, CLLocationManagerDelegate, MKMapVi
     }
     
     func setupFoursquare() {
-        client = Client(clientID: "BBB0KATE4JYVSDWYRQLG01PVTEFAC5131VMAEDMHEOBQCTFE", clientSecret: "03AYJKVNONGKPTFH13XV0SVI1AH5LOA5LTALYJSXMR30M1J4", redirectURL: "")
+        client = Client(clientID: "...", clientSecret: "...", redirectURL: "")
         
         if(client != nil) {
             var configuration = Configuration(client: client!)
