@@ -8,20 +8,54 @@
 
 /* Begin PBXBuildFile section */
 		9336516321AE76EE00871AB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9336516221AE76EE00871AB4 /* AppDelegate.swift */; };
-		9336516521AE76EE00871AB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9336516421AE76EE00871AB4 /* ViewController.swift */; };
+		9336516521AE76EE00871AB4 /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9336516421AE76EE00871AB4 /* PlacesViewController.swift */; };
 		9336516821AE76EE00871AB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9336516621AE76EE00871AB4 /* Main.storyboard */; };
 		9336516A21AE76F000871AB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9336516921AE76F000871AB4 /* Assets.xcassets */; };
 		9336516D21AE76F000871AB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9336516B21AE76F000871AB4 /* LaunchScreen.storyboard */; };
+		9336517E21AE780E00871AB4 /* QuadratTouch.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9336517C21AE77EF00871AB4 /* QuadratTouch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9336518121AE79D300871AB4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9336518021AE79D200871AB4 /* MapKit.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9336517921AE77EF00871AB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9336517421AE77EF00871AB4 /* Quadrat.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 476B70891A0EBAE700AFAC33;
+			remoteInfo = Quadrat;
+		};
+		9336517B21AE77EF00871AB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9336517421AE77EF00871AB4 /* Quadrat.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 476B70DA1A0EBBA500AFAC33;
+			remoteInfo = QuadratTouch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9336517D21AE780000871AB4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				9336517E21AE780E00871AB4 /* QuadratTouch.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9336515F21AE76EE00871AB4 /* PlacesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlacesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9336516221AE76EE00871AB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9336516421AE76EE00871AB4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9336516421AE76EE00871AB4 /* PlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
 		9336516721AE76EE00871AB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9336516921AE76F000871AB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9336516C21AE76F000871AB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9336516E21AE76F000871AB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9336517421AE77EF00871AB4 /* Quadrat.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Quadrat.xcodeproj; path = "das-quadrat/Source/Quadrat.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		9336518021AE79D200871AB4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9336518121AE79D300871AB4 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +75,7 @@
 			children = (
 				9336516121AE76EE00871AB4 /* PlacesApp */,
 				9336516021AE76EE00871AB4 /* Products */,
+				9336517F21AE79D200871AB4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +91,31 @@
 			isa = PBXGroup;
 			children = (
 				9336516221AE76EE00871AB4 /* AppDelegate.swift */,
-				9336516421AE76EE00871AB4 /* ViewController.swift */,
+				9336516421AE76EE00871AB4 /* PlacesViewController.swift */,
 				9336516621AE76EE00871AB4 /* Main.storyboard */,
 				9336516921AE76F000871AB4 /* Assets.xcassets */,
 				9336516B21AE76F000871AB4 /* LaunchScreen.storyboard */,
 				9336516E21AE76F000871AB4 /* Info.plist */,
+				9336517421AE77EF00871AB4 /* Quadrat.xcodeproj */,
 			);
 			path = PlacesApp;
+			sourceTree = "<group>";
+		};
+		9336517521AE77EF00871AB4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9336517A21AE77EF00871AB4 /* Quadrat.framework */,
+				9336517C21AE77EF00871AB4 /* QuadratTouch.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9336517F21AE79D200871AB4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9336518021AE79D200871AB4 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +128,7 @@
 				9336515B21AE76EE00871AB4 /* Sources */,
 				9336515C21AE76EE00871AB4 /* Frameworks */,
 				9336515D21AE76EE00871AB4 /* Resources */,
+				9336517D21AE780000871AB4 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -110,12 +165,35 @@
 			mainGroup = 9336515621AE76EE00871AB4;
 			productRefGroup = 9336516021AE76EE00871AB4 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 9336517521AE77EF00871AB4 /* Products */;
+					ProjectRef = 9336517421AE77EF00871AB4 /* Quadrat.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				9336515E21AE76EE00871AB4 /* PlacesApp */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		9336517A21AE77EF00871AB4 /* Quadrat.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Quadrat.framework;
+			remoteRef = 9336517921AE77EF00871AB4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9336517C21AE77EF00871AB4 /* QuadratTouch.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = QuadratTouch.framework;
+			remoteRef = 9336517B21AE77EF00871AB4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		9336515D21AE76EE00871AB4 /* Resources */ = {
@@ -135,7 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9336516521AE76EE00871AB4 /* ViewController.swift in Sources */,
+				9336516521AE76EE00871AB4 /* PlacesViewController.swift in Sources */,
 				9336516321AE76EE00871AB4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
